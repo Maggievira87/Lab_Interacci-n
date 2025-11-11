@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maggie Shop</title>
+</head>
+<body>
+    <h1> Maggie Shop</h1>
+    <p>Elige tus favoritos y agrégalos al carrito:</p>
+
+    <div>
+        <h3>Tennis Puma Caven Negros (Talla 39)</h3>
+        <p>Precio: $<span id="precio-puma-caven">20</span></p>
+        <button onclick="agregarAlCarrito('Tennis Puma Caven Negros', 20)">Agregar al carrito</button>
+    </div>
+
+    <div>
+        <h3>Tennis Adidas Originales (Talla 37)</h3>
+        <p>Precio: $<span id="precio-adidas">25</span></p>
+        <button onclick="agregarAlCarrito('Tennis Adidas Originales', 25)">Agregar al carrito</button>
+    </div>
+
+    <div>
+        <h3>Tennis Puma Casuales (Talla 38)</h3>
+        <p>Precio: $<span id="precio-puma-casuales">30</span></p>
+        <button onclick="agregarAlCarrito('Tennis Puma Casuales', 30)">Agregar al carrito</button>
+    </div>
+
+    <hr>
+
+    <h2>🛒 Resumen del carrito</h2>
+    <p>Total de productos: <span id="total-items">0</span></p>
+    <p>Total a pagar: $<span id="total-precio">0</span></p>
+
+    <button onclick="vaciarCarrito()">Vaciar carrito</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
